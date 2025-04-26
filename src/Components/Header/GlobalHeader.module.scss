@@ -1,0 +1,26 @@
+.globalHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--header-border-color);
+    background: var(--header-bg);
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.4s ease, border 0.4s ease;
+
+    &Content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.btnListHeader {
+    width: 100px;
+    height: 40px;
+
+}

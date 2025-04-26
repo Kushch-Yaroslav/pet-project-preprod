@@ -1,0 +1,50 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0 10px;
+  border: 1px solid ;
+  font-weight: 500;
+  text-shadow: var(--btn-header-shadow-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: var(--button-bg);
+  color: var(--btn-header-color);
+  border-color: var(--button-border-color);
+
+  /* ← вот правильный вариант */
+  &:hover,
+  &:global(.proximity-hover) {
+    background-color: var(--button-hover-bg);
+    box-shadow: var(--button-shadow);
+    color: var(--btn-header-color);
+    transform: scale(1.03);
+  }
+}
+
+.secondary {
+  background-color: white;
+  color: var(--main-blue-color);
+  border: 1px solid var(--background-header-btn-color);
+  box-shadow: 0 0 3px 3px rgba(217,217,217,1);
+
+  &:hover,
+  &.proximity-hover {
+    background-color: var(--main-blue-color);
+    color: white;
+    box-shadow: 0 0 3px 3px rgba(217,217,217,1);
+  }
+}
+
+
+.iconLeft {
+  margin-right: 8px;
+}
+
+.iconRight {
+  margin-left: 8px;
+}

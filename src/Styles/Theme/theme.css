@@ -1,15 +1,3 @@
-:root {
-    --bg-color: radial-gradient(ellipse at top left, #0f0c29, #302b63, #24243e);
-    --text-color: #c9d1d9;
-    --accent-color: #58a6ff;
-}
-
-.light {
-    --bg-color: #ffffff;
-    --text-color: #0d1117;
-    --accent-color: #0366d6;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -21,43 +9,25 @@ body {
     overflow-x: hidden;
 }
 
-
-h1, h2, h3, .glow-text {
-    color: #58a6ff;
-    text-shadow: 0 0 5px #58a6ff, 0 0 10px #58a6ff, 0 0 20px #58a6ff;
+.glow-text {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
 }
-
-button {
-    background-color: transparent;
-    border: 1px solid #58a6ff;
-    color: #58a6ff;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    text-shadow: 0 0 3px #58a6ff;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: #58a6ff22;
-    box-shadow: 0 0 10px #58a6ff;
-}
-
 
 @keyframes neon-glow {
     0%, 100% {
         text-shadow:
-                0 0 5px #58a6ff,
-                0 0 10px #58a6ff,
-                0 0 20px #58a6ff,
-                0 0 40px #58a6ff;
+                0 0 5px var(--accent-color),
+                0 0 10px var(--accent-color),
+                0 0 20px var(--accent-color),
+                0 0 40px var(--accent-color);
     }
     50% {
         text-shadow:
-                0 0 10px #58a6ff,
-                0 0 20px #58a6ff,
-                0 0 30px #58a6ff,
-                0 0 60px #58a6ff;
+                0 0 10px var(--accent-color),
+                0 0 20px var(--accent-color),
+                0 0 30px var(--accent-color),
+                0 0 60px var(--accent-color);
     }
 }
 
